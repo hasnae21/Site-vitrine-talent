@@ -389,43 +389,21 @@ h2 {
 }
 .slide {
   float: left;
+  padding: 0px 15px;
 }
+
 @keyframes glisse {
   0% {
     transform: translateX(0);
   }
-  10% {
-    transform: translateX(-50);
-  }
-  20% {
-    transform: translateX(-100);
-  }
   25% {
-    transform: translateX(-250px);
-  }
-  35% {
-    transform: translateX(-250px);
-  }
-  45% {
-    transform: translateX(-400px);
+    transform: translateX(-270px);
   }
   50% {
-    transform: translateX(-500px);
-  }
-  60% {
-    transform: translateX(-500px);
-  }
-  70% {
-    transform: translateX(-750px);
+    transform: translateX(-510px);
   }
   75% {
-    transform: translateX(-750px);
-  }
-  85% {
-    transform: translateX(-800px);
-  }
-  95% {
-    transform: translateX(-900px);
+    transform: translateX(-780px);
   }
   100% {
     transform: translateX(0);
