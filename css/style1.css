@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Rochester&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #dfd7d7;
+}
+
+nav ul li button {
+  color: black;
+  width: 150px;
+  height: 50px;
+  border: 0px;
+  border-radius: 20px;
+  align-items: center;
+  background-color: #e6ccb2;
+  font-size: larger;
+  font-family: Rokkitt, Helvetica, sans-serif;
+  margin: -15px 0px;
+  cursor: pointer;
+}
+a {
+  color: #e6ccb2;
+  font-family: "Rokkitt", Helvetica, sans-serif;
+  font-size: 20px;
+}
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: #333;
+  z-index: 9999999999999999;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  overflow: hidden;
+}
+.navbar ul li {
+  padding: 0px 10px;
+}
+
+.navbar li a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.navbar li a:hover,
+.navbar .menu-btn:hover {
+  color: white;
+}
+
+.navbar #logo {
+  font-size: 50px;
+  font-style: italic;
+  font-family: "Rochester";
+  display: block;
+  float: left;
+  padding: 3px 20px;
+}
+
+/* menu */
+
+.navbar .menu {
+  clear: both;
+  max-height: 0;
+}
+
+/* menu icon */
+
+.navbar .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.navbar .menu-icon .nav-icon {
+  background: #e6ccb2;
+  display: block;
+  height: 3px;
+  width: 35px;
+  position: relative;
+  transition: 0.2s ease-out;
+}
+
+.navbar .menu-icon .nav-icon:before,
+.navbar .menu-icon .nav-icon:after {
+  background: #e6ccb2;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+}
+
+.navbar .menu-icon .nav-icon:before {
+  top: 9px;
+}
+
+.navbar .menu-icon .nav-icon:after {
+  top: -9px;
+}
+
+/* menu btn */
+
+.navbar .menu-btn {
+  display: none;
+}
+
+.navbar .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.navbar .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.navbar .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.navbar .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media screen and (min-width: 420px){
+  .navbar {
+    z-index: 999999;
+    position: fixed;
+  }
+  .navbar li {
+    float: left;
+  }
+  .navbar li a {
+    padding: 20px 30px;
+  }
+  .navbar .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .navbar .menu-icon {
+    display: none;
+  }
+}
+
+/* header{
+  padding-top: 70px; 
+} */
+header .photos {
+  padding-bottom: -20px;
+}
+header h4 {
+  font-size: 50px;
+  font-family: "Rochester";
+  font-weight: bolder;
+  font-style: italic;
+  text-align: center;
+}
+.servise {
+  padding: 50px 0px;
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.cours {
+  padding: 80px 0px;
+}
+
+.servise .axe {
+  padding: 20px;
+  transition: 1s;
+}
+.cours .axe {
+  padding: 10px 100px;
+  justify-content: flex-start;
+  display: flex;
+  /* flex-wrap: wrap;   */
+  align-items: center;
+}
+
+@media screen and (min-width: 420px){
+  .cours {
+    padding: 8px 0px;
+  }
+  .cours .axe {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px 0px;
+  }
+  .cours .axe img {
+    width: 150px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    z-index: 1;
+    filter: blur(10);
+  }
+  .photos + h2 {
+    font-size: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .carossel+.slider{
+     overflow: hidden;
+ 
+
+  }
+}
+
+.servise .axe img {
+  width: 250px;
+  height: 200px;
+  align-items: center;
+  border-radius: 20px;
+  z-index: 1;
+  filter: blur(20);
+}
+.servise .axe:hover {
+  transform: scale(1.3);
+  z-index: 2;
+}
+.cours .axe img {
+  width: 350px;
+  height: 250px;
+  align-items: center;
+  border-radius: 10px;
+  border: 4px solid #a89684;
+  z-index: 1;
+  filter: blur(10);
+}
+.servise .axe h4 {
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
+  font-family: "Rochester";
+  color: #dfd7d7;
+  margin-top: -70px;
+  padding: 10px 0px;
+  z-index: 9999;
+  text-shadow: 10px 10px 10px black;
+}
+.cours .axe h4 {
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+  font-family: "Rochester";
+  color: black;
+  z-index: 9999;
+}
+/* **************************************** */
+footer {
+  background: #333232;
+  width: 100%;
+  margin-top: 20px;
+}
+.listes {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.axe h5 {
+  font-size: 30px;
+  color: #e6ccb2;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-family: "Rochester";
+  border-bottom: 1px solid #e6ccb2;
+}
+.axe ul li {
+  margin-bottom: 15px;
+}
+.axe ul li a {
+  font-size: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.axe ul li a:hover {
+  color: #e3ce5f;
+}
+#logo {
+  font-size: 50px;
+  font-style: italic;
+  font-family: "Rochester";
+  float: center;
+  padding: 10px 20px;
+}
+
+.copyreight {
+  background-color: #333;
+  border-top: 2px solid #fff;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.copyreight p {
+  color: white;
+  margin: 10px 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.icons {
+  width: 250px;
+  height: 50px;
+}
+.icons i {
+  color: #e6ccb2;
+  font-size: 30px;
+  margin: 0px 15px;
+  z-index: 33333;
+}
+
+h2 {
+  font-size: 300%;
+  margin-bottom: -60px;
+  font-family: "Rochester";
+  font-weight: bold;
+  text-align: center;
+  color: #a89684;
+  border-bottom: 2px solid #a89684;
+}
+.cours .axe h4 {
+  font-size: 15px;
+  margin: 20px;
+  font-weight: lighter;
+  font-family: "Rokkitt";
+  font-style: italic;
+  text-align: left;
+  color: black;
+  word-spacing: 10px;
+  line-height: 30px;
+}
+.cours .axe p {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Rochester";
+  color: black;
+}
+.cours .axe samp {
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: "Rokkitt";
+  font-style: italic;
+  text-align: left;
+  color: #a89684;
+  word-spacing: 20px;
+  line-height: 30px;
+}
+.carossel {
+  background-color: #a89684;
+  width: 1100px;
+  height: 320px;
+  margin: auto;
+  padding: 0px 0px;
+  border: 4px solid black;
+  border-radius: 40px;
+}
+.slider {
+  width: 850px;
+  height: 300px;
+  overflow: hidden;
+  margin: auto;
+  padding-top: 70px;
+}
+.slides {
+  width: calc(250px * 9);
+  animation: glisse 10s infinite;
+}
+.slide {
+  float: left;
+}
+@keyframes glisse {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-50);
+  }
+  20% {
+    transform: translateX(-100);
+  }
+  25% {
+    transform: translateX(-250px);
+  }
+  35% {
+    transform: translateX(-250px);
+  }
+  45% {
+    transform: translateX(-400px);
+  }
+  50% {
+    transform: translateX(-500px);
+  }
+  60% {
+    transform: translateX(-500px);
+  }
+  70% {
+    transform: translateX(-750px);
+  }
+  75% {
+    transform: translateX(-750px);
+  }
+  85% {
+    transform: translateX(-800px);
+  }
+  95% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.carossel h2 {
+  color: #333;
+  font-size: 30px;
+  text-align: left;
+  font-family: "Rochester";
+  font-style: italic;
+  margin-left: 80px;
+  font-weight: bold;
+}

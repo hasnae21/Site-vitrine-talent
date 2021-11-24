@@ -1,0 +1,121 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    padding-top: 50px;
+    background-color: #B09E9E;
+}
+@media screen and (max-width: 420px){
+    main{
+        width: 100%; 
+        height: 90%;
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row-reverse;
+       
+   }
+}
+img{
+    
+    width: 100%;
+    height: 500px;
+}
+main{
+    /* padding-top: 50px; */
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: white;
+    margin: auto;
+    
+}
+.forum-container{
+    margin: auto;
+}
+/* .one{
+    font-size: 2.5em;
+   
+} */
+h1
+{
+font-family: 'Rochester';
+text-align: center;
+}
+h2{
+ font-family: poppins;
+ color: #978068;
+ text-align: center;
+}
+h5{
+    font-family: poppins;
+ color: black;
+ text-align: center;
+ font-size: large; 
+}
+.forme{
+    font-size: 44px;
+    display: block;
+    align-items: center;
+    /* margin-left: 5em;
+    margin-top: 2em; */
+    font-family: Raleway;
+    text-align: center;
+    margin: auto;
+    padding: 20px 0px;
+}
+/* form{
+    margin: auto;
+} */
+input
+{
+/* padding: 7px; */
+border-radius: 30px;
+width: 400px;
+height: 50px;
+}
+.login01
+{
+    background: #B09E9E;
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+    font-family: "Poppins" bold;
+    font-size: 23px;
+    color: #FFFFFF;
+    /* margin-left: 4.3em; */
+}
+.face
+{
+    background: #1877F1;
+    border-radius: 5px;
+    width: 400px;
+    height: 50px;
+    font-family: roboto bold;
+    color:#FFFFFF;
+    
+}
+#login-items{
+    /* margin-left: 16em;
+    margin-top: 1.2em; */
+    text-align: center;
+}
+h3{
+/* padding-left:2.5em ; */
+font-family: poppins;
+font-size: 3em;
+}
+p{
+font-size: 14px;
+/* margin-left: 2em; */
+font-weight: bold;
+}
+section{
+    width: 60%;
+    /* background-color: white; */
+} 
+
+

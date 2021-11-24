@@ -1,0 +1,82 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    background-color:#DFD7D7;
+}
+
+input
+{
+    display:flex;
+    flex-direction: column;
+    padding: 9px;
+    /* margin-left: 20%; */
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 320px;
+}
+header{
+    text-align: center;
+}
+h1
+{
+font-family: 'Rochester';
+ text-align: center;
+}
+h2{
+
+font-family: poppins;
+color: #978068;
+text-align: center;
+}
+
+.forum-title{
+    float: right;
+}
+/* #rep{
+    margin-left: 35px;
+} */
+.annuler
+{
+background: #C4C4C4;
+border-radius: 16px;
+width: 80px;
+height: 30px;
+float: left;
+font-family: Impact, Haettenschweiler, 'Roboto Bold', sans-serif;
+}
+.submit
+{
+    background:#C4C4C4;
+    border-radius: 55px;
+    width: 80px;
+    height: 30px;
+    float: right;
+    font-family: Impact, Haettenschweiler, 'Roboto Bold', sans-serif;
+}
+
+.sec 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 50px;
+}
+.annuler2
+{
+    background: #C4C4C4;
+    border-radius: 16px;
+    width: 80px;
+    height: 30px;
+    float: left;
+    font-family: Impact, Haettenschweiler, 'Roboto Bold', sans-serif;
+}
+.submit2
+{
+    background:#C4C4C4;  
+    border-radius: 55px;
+    width: 80px;
+    height: 30px;
+    float: right;
+    font-family: Impact, Haettenschweiler, 'Roboto Bold', sans-serif;
+}

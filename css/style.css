@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Rochester&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #dfd7d7;
+}
+nav ul li button {
+  color: black;
+  width: 150px;
+  height: 50px;
+  border: 0px;
+  border-radius: 20px;
+  align-items: center;
+  background-color: #e6ccb2;
+  font-size: larger;
+  font-family: Rokkitt, Helvetica, sans-serif;
+  margin: -15px 0px;
+  cursor: pointer;
+}
+video {
+  padding-top: 70px;
+  width: 100%;
+}
+a {
+  color: #e6ccb2;
+  font-family: "Rokkitt", Helvetica, sans-serif;
+  font-size: 20px;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: #333;
+  z-index: 999999;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  overflow: hidden;
+}
+.navbar ul li {
+  padding: 0px 10px;
+}
+
+.navbar li a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.navbar li a:hover,
+.navbar .menu-btn:hover {
+  color: white;
+}
+
+.navbar #logo {
+  font-size: 50px;
+  font-style: italic;
+  font-family: "Rochester";
+  display: block;
+  float: left;
+  padding: 3px 20px;
+}
+
+/* menu */
+
+.navbar .menu {
+  clear: both;
+  max-height: 0;
+}
+
+/* menu icon */
+
+.navbar .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.navbar .menu-icon .nav-icon {
+  background: #e6ccb2;
+  display: block;
+  height: 3px;
+  width: 35px;
+  position: relative;
+  transition: 0.2s ease-out;
+}
+
+.navbar .menu-icon .nav-icon:before,
+.navbar .menu-icon .nav-icon:after {
+  background: #e6ccb2;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+}
+
+.navbar .menu-icon .nav-icon:before {
+  top: 9px;
+}
+
+.navbar .menu-icon .nav-icon:after {
+  top: -9px;
+}
+
+/* menu btn */
+
+.navbar .menu-btn {
+  display: none;
+}
+
+.navbar .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.navbar .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.navbar .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.navbar .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media screen and (min-width: 420px){
+  .navbar {
+    z-index: 999999;
+    position: fixed;
+  }
+  .navbar li {
+    float: left;
+  }
+  .navbar li a {
+    padding: 20px 30px;
+  }
+  .navbar li a:hover {
+    padding: 20px 30px;
+  }
+
+  .navbar .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+    background-color: black;
+  }
+  .navbar .menu-icon {
+    display: none;
+  }
+  .bienvennue .box {
+    margin: 0px 10px;
+    border-radius: 30px;
+    filter: blur(10);
+    box-shadow: 5px 5px 5px black;
+  }
+}
+@media screen and(min-width: 420px) {
+
+  .servise {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80px;
+    height: 150px;
+    padding-bottom: 100px;
+  }
+  .servise .box {
+    position: relative;
+    width: 80px;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      transform: perspective(500px) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(500px) rotateY(360deg);
+    }
+  }
+  .servise .box span {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 10deg)) translateZ(80px);
+  }
+
+  .servise span img {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .servise span img {
+    border-radius: 30px;
+  }
+}
+
+/* ********************************************************************** */
+/* .bienvennue{
+  width: ;
+} */
+.bienvennue h2 {
+  color: #333;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Rochester";
+  padding-bottom: 20px;
+  font-style: italic;
+  font-weight: bolder;
+  margin-bottom: -65px;
+  padding-top: 20px;
+}
+.bienvennue .box {
+  margin: 0px 20px;
+  border-radius: 30px;
+  filter: blur(10);
+  box-shadow: 5px 5px 5px black;
+}
+
+#message {
+  padding: 30px 40px;
+  margin: 25px ;
+  background-color: #978068;
+  border-radius: 20px;
+}
+#message p {
+  color: #e3ce5f;
+  font-size: 30px;
+  font-family: "Rochester";
+  text-align: center;
+}
+#message h4 {
+  color: #333;
+  font-size: 25px;
+  font-family: "Rokkitt";
+  text-align: center;
+}
+
+.servise {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  padding-bottom: 100px;
+}
+.servise .box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: animate 20s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+.servise .box span {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 90deg)) translateZ(300px);
+}
+
+.servise span img {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.servise span img {
+  border-radius: 30px;
+}
+
+.button {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section button {
+  color: #e3ce5f;
+  /* width: 30%;
+  height: 60%; */
+  border: 0px;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #978068;
+  font-size: 22px;
+  font-weight: 900;
+  font-family: "Rokkitt";
+  padding: 20px 50px;
+  cursor: pointer;
+}
+section button:hover {
+  color: #e6ccb2;
+  background-color: #333;
+}
+
+/* ************************************************************************************************** */
+footer {
+  background-color: #333232;
+  width: 100%;
+}
+
+.listes {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.axe h5 {
+  font-size: 30px;
+  color: #e6ccb2;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-family: "Rochester";
+  border-bottom: 1px solid #e6ccb2;
+}
+.axe ul li {
+  margin-bottom: 15px;
+}
+.axe ul li a {
+  font-size: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.axe ul li a:hover {
+  color: #e3ce5f;
+}
+#logo {
+  font-size: 30px;
+  font-style: italic;
+  font-family: "Rochester";
+  float: center;
+  padding: 10px 20px;
+}
+
+.copyreight {
+  background-color: #333;
+  border-top: 2px solid #fff;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.copyreight p {
+  color: white;
+  margin: 10px 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.icons {
+  width: 250px;
+  height: 50px;
+}
+.icons i {
+  color: #e6ccb2;
+  font-size: 30px;
+  margin: 0px 15px;
+  z-index: 33333;
+}
