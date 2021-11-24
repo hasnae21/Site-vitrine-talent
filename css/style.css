@@ -158,7 +158,7 @@ a {
     clear: none;
     float: right;
     max-height: none;
-    background-color: black;
+    background-color: #333;
   }
   .navbar .menu-icon {
     display: none;
