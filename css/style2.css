@@ -60,7 +60,7 @@ font-family: Impact, Haettenschweiler, 'Roboto Bold', sans-serif;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 50px 50px;
+    padding: 50px 0px;
 }
 .annuler2
 {
@@ -79,4 +79,16 @@ font-family: Impact, Haettenschweiler, 'Roboto Bold', sans-serif;
     height: 30px;
     float: right;
     font-family: Impact, Haettenschweiler, 'Roboto Bold', sans-serif;
+}
+.section1{
+    padding: 20px 20px;
+    margin: 20px 20px;
+    border: 3px solid #fff;
+    border-radius: 20px;
+}
+.section2{
+    padding: 30px 20px;
+    margin: 20px 20px;
+    border: 3px solid #fff;
+    border-radius: 20px;
 }

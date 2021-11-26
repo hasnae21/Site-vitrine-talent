@@ -31,7 +31,7 @@ a {
 }
 .navbar {
   width: 100%;
-  height: 70px;
+  /* height: 70px;    404 */
   background-color: #333;
   z-index: 9999999999999999;
 }
@@ -135,7 +135,7 @@ a {
   top: 0;
 }
 
-@media screen and (min-width: 420px){
+/* @media screen and (min-width: 420px){
   .navbar {
     z-index: 999999;
     position: fixed;
@@ -154,7 +154,7 @@ a {
   .navbar .menu-icon {
     display: none;
   }
-}
+} */
 
 /* header{
   padding-top: 70px; 
@@ -163,11 +163,12 @@ header .photos {
   padding-bottom: -20px;
 }
 header h4 {
-  font-size: 50px;
+  font-size: 55px;
   font-family: "Rochester";
   font-weight: bolder;
   font-style: italic;
   text-align: center;
+  
 }
 .servise {
   padding: 50px 0px;
@@ -193,7 +194,7 @@ header h4 {
   align-items: center;
 }
 
-@media screen and (min-width: 420px){
+@media screen and (max-width: 420px){
   .cours {
     padding: 8px 0px;
   }
@@ -218,11 +219,59 @@ header h4 {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  .carossel+.slider{
-     overflow: hidden;
- 
-
+  .carossel {
+    background-color: #a89684;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    padding: 15px 0px;
+    border: 3px solid black;
+    border-radius: 40px;
   }
+  .slider {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin: auto;
+    padding-top: 50px;
+  }
+  .slides {
+    width: calc(250px * 9);
+    animation: glisse 10s infinite;
+  }
+  .slide {
+    float: left;
+    padding: 0px 15px;
+  }
+  
+  @keyframes glisse {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-270px);
+    }
+    50% {
+      transform: translateX(-510px);
+    }
+    75% {
+      transform: translateX(-780px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .carossel h2 {
+    color: #333;
+    font-size: 30px;
+    text-align: left;
+    font-family: "Rochester";
+    font-style: italic;
+    margin-left: 80px;
+    font-weight: bold;
+  }
+
 }
 
 .servise .axe img {
@@ -231,10 +280,10 @@ header h4 {
   align-items: center;
   border-radius: 20px;
   z-index: 1;
-  filter: blur(20);
+  filter: blur(80);
 }
 .servise .axe:hover {
-  transform: scale(1.3);
+  transform: scale(1.);
   z-index: 2;
 }
 .cours .axe img {
@@ -369,10 +418,10 @@ h2 {
 }
 .carossel {
   background-color: #a89684;
-  width: 1100px;
+  width: 1050px;
   height: 320px;
   margin: auto;
-  padding: 0px 0px;
+  padding: 20px 0px;
   border: 4px solid black;
   border-radius: 40px;
 }
@@ -418,4 +467,55 @@ h2 {
   font-style: italic;
   margin-left: 80px;
   font-weight: bold;
+}
+
+#Reserver{
+  margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #a89684;
+    /* width: 30%;
+    height: 60%; */
+    border: 0px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #333;
+    font-size: 22px;
+    font-weight: 900;
+    font-family: "Rokkitt";
+    padding: 15px 50px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 420px){
+.navbar {
+  z-index: 999999;
+  position: fixed;
+}
+.navbar li {
+  float: left;
+}
+.navbar li a {
+  padding: 20px 30px;
+}
+.navbar li a:hover {
+  padding: 20px 30px;
+  color:#fff;
+}
+
+.navbar .menu {
+  clear: none;
+  float: right;
+  max-height: none;
+  background-color: #333;
+}
+.navbar .menu-icon {
+  display: none;
+}
+
 }
